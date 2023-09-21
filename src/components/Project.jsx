@@ -36,7 +36,7 @@ const Project = () => {
       title: "Getting Started",
       image: Image1,
       text: "Our week commenced with the successful completion of last week's task related to GIS. Afterward, we dedicated some time to gaining a deeper understanding of APIs. This week was primarily focused on API learning, encompassing repository patterns and DTOs, which were effectively implemented in",
-    }
+    },
   ];
   return (
     <div>
@@ -61,29 +61,19 @@ const Project = () => {
           </p>
         </div>
         <div className="p-4 text-[#3B536D] leading-10 tracking-normal text-2xl text-justify">
-          Nepal's per capita income is very low, with more than 70% of Nepalese
-          unable to afford private healthcare. Most healthcare facilities are
-          concentrated in urban areas, leaving rural regions lagging behind in
-          healthcare development. Rukum, situated in one of the most remote and
-          rural areas of Nepal, faces significant challenges in healthcare
-          access. Human Development and Community Services (HDCS) operates in
-          the health sector in Rukum through Chaurjahari Hospital Rukum (CHR).
-          Being located in such a remote area with limited access to modern
-          medical advancements, the hospital struggles to change people's
-          mentality regarding healthcare. The facility's mission extends beyond
-          merely treating the sick; it also aims to encourage local residents to
-          seek the care they require. Similarly, blood banking is a significant
-          challenge in low-income and middle-income countries like Nepal. The
-          issue is even more pronounced in rural areas compared to urban
-          regions. Rukum district lacks a blood transfusion center, forcing
-          patients and their families to search desperately for donors during
-          critical times of need. In addition to the stress of medical
-          procedures, patients' relatives must also deal with the added burden
-          of sourcing blood. This problem deeply affects the livelihoods of
-          people in Rukum and nearby regions. The BloodSync team from Inspire
-          Nepal is determined to collaborate in resolving this critical issue.
-          Our team intends to leverage the potential of Information Technology
-          to address this problem.
+          Nepal's low per capita income leaves over 70% of its population unable
+          to access private healthcare. Healthcare resources are heavily skewed
+          towards urban areas, leaving rural regions like Rukum with limited
+          access. Chaurjahari Hospital Rukum (CHR), operated by Human
+          Development and Community Services (HDCS), grapples with the challenge
+          of reshaping local attitudes towards healthcare. CHR's mission extends
+          beyond treatment, aiming to empower residents to proactively seek
+          essential care. In Nepal, blood banking presents a significant
+          obstacle, especially in rural areas like Rukum, which lacks a
+          dedicated transfusion center, placing immense pressure on patients and
+          their families to find donors. This burden deeply impacts livelihoods.
+          To address this critical issue, the BloodSync team from Inspire Nepal
+          plans to harness Information Technology.
         </div>
       </div>
       <div className=" w-full h-fit bg-[#3B536D]  p-5 md:p-20 flex flex-col items-center">
