@@ -33,10 +33,10 @@ const Project = () => {
 
   const blogs = [
     {
-      title: "Getting Started",
+      title: "Getting Started...",
       image: Image1,
       text: "Our week commenced with the successful completion of last week's task related to GIS. Afterward, we dedicated some time to gaining a deeper understanding of APIs. This week was primarily focused on API learning, encompassing repository patterns and DTOs, which were effectively implemented in",
-    }
+    },
   ];
   return (
     <div>
@@ -133,23 +133,30 @@ const Project = () => {
           life-saving care.
         </p>
       </div>
-      <div className="flex flex-col gap-4 m-5 md:mt-20 text-center p-5 w-fit cursor-pointer">
+      <div className="flex flex-col gap-4 m-5 md:mt-20 text-center p-5 cursor-pointer">
         <p className="text-5xl leading-10 tracking-wide text-[#3B536D]">BLOG</p>
-        <div className="flex justify-center gap-8">
+        <div className="flex flex-col justify-center gap-8">
           {blogs.map((oneBlog) => (
-            <div className=" w-1/4 p-5 my-5 flex flex-col gap-2 justify-start items-start border rounded-md">
-              <p className="text-xl font-medium leading-6">{oneBlog.title}</p>
-              <div className="w-full h-full">
+            <div className=" w-full px-10 py-5 my-5 flex flex-col gap-2 justify-start items-start border-2 border-[#3B536D] rounded-lg">
+              <div className="flex w-full gap-10">
+                <div className="">
+                  <Link to="blog">
+                    <img src={oneBlog.image} alt="image of group" width="1000px"/>
+                  </Link>
+                </div>
                 <Link to="blog">
-                  <img src={oneBlog.image} alt="image of group" />
+                  <div className="flex flex-col gap-10 p-5">
+                  <p className="text-5xl font-medium leading-6 text-left tracking-wide text-[#3B536D]">
+                    {oneBlog.title}
+                  </p>
+
+                  <div className="w-full text-left">
+                    {oneBlog.text}{" "}
+                    <span className="text-blue-500">Read More..</span>
+                  </div>
+                  </div>
                 </Link>
               </div>
-              <Link to="blog">
-                <div className="w-full h-1/2 text-sm text-justify">
-                  {oneBlog.text}{" "}
-                  <span className="text-blue-500">Read More..</span>
-                </div>
-              </Link>
             </div>
           ))}
         </div>
