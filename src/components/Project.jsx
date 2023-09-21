@@ -36,7 +36,7 @@ const Project = () => {
       title: "Getting Started",
       image: Image1,
       text: "Our week commenced with the successful completion of last week's task related to GIS. Afterward, we dedicated some time to gaining a deeper understanding of APIs. This week was primarily focused on API learning, encompassing repository patterns and DTOs, which were effectively implemented in",
-    },
+    }
   ];
   return (
     <div>
@@ -133,26 +133,28 @@ const Project = () => {
           life-saving care.
         </p>
       </div>
-      <div className="flex flex-col gap-4 m-5 md:mt-20 text-center p-5 w-fit">
+      <div className="flex flex-col gap-4 m-5 md:mt-20 text-center p-5 w-fit cursor-pointer">
         <p className="text-5xl leading-10 tracking-wide text-[#3B536D]">BLOG</p>
         <div className="flex justify-center gap-8">
           {blogs.map((oneBlog) => (
             <div className=" w-1/4 p-5 my-5 flex flex-col gap-2 justify-start items-start border rounded-md">
               <p className="text-xl font-medium leading-6">{oneBlog.title}</p>
               <div className="w-full h-full">
-                <img src={oneBlog.image} alt="image of group" />
-              </div>
-              <div className="w-full h-1/2 text-sm text-justify">
-                {oneBlog.text}{" "}
                 <Link to="blog">
-                  <span className="text-blue-500">Read More..</span>
+                  <img src={oneBlog.image} alt="image of group" />
                 </Link>
               </div>
+              <Link to="blog">
+                <div className="w-full h-1/2 text-sm text-justify">
+                  {oneBlog.text}{" "}
+                  <span className="text-blue-500">Read More..</span>
+                </div>
+              </Link>
             </div>
           ))}
         </div>
       </div>
-      <div className="flex flex-col gap-4 m-5 mt-20 text-center p-5 md:p-20">
+      <div className="flex flex-col gap-4 m-5 text-center p-5 md:p-20">
         <p className="text-5xl leading-10 tracking-wide text-[#3B536D]">TEAM</p>
         <div className=" flex flex-wrap justify-center gap-20">
           {teamMembers.map((oneMember) => (
