@@ -1,9 +1,13 @@
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Image1 from '../assets/1000009858.jpg';
+// import Image1 from '../assets/1000009858.jpg';
 import Image2 from '../assets/1000009866.jpg';
-import { MdOutlineKeyboardBackspace } from 'react-icons/md';
+import {
+  MdArrowBack,
+  MdArrowForward,
+  MdOutlineKeyboardBackspace,
+} from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 function Blog() {
@@ -23,18 +27,18 @@ function Blog() {
       </div>
       <div className="flex justify-center p-[13px] font-[Poppins] bg-[rgb(239,247,255)] min-h-screen md:p-20">
         <div className="flex flex-col w-full md:w-[60%] h-full">
-          <div className="w-full md:p-1 flex justify-start">
+          {/* <div className="w-full md:p-1 flex justify-start">
             <p className=" md:pl-4 text-reg text-lg font-medium underline italic leading-6 text-left">
               {' '}
-              September 15{' '}
+              September 29{' '}
             </p>
-          </div>
-          <div className="w-full pt-5 flex justify-start md:pt-2 mb-1 md:mb-2   text-5xl md:text-7xl ">
+          </div> */}
+          {/* <div className="w-full pt-5 flex justify-start md:pt-2 mb-1 md:mb-2   text-5xl md:text-7xl ">
             <p className="md:pl-4 md:pt-2 font-light font-[Poppins] ">
               Getting started
             </p>
-          </div>
-          <div className="pt-8 flex justify-center items-center flex-col space-x-0  ">
+          </div> */}
+          {/* <div className="pt-8 flex justify-center items-center flex-col space-x-0  ">
             <img
               className=" aspect-video h-auto w-auto md:h-[400px] md:w-[600px]"
               src={Image1}
@@ -45,9 +49,9 @@ function Blog() {
               Team BloodSync: Sarovar, Samiksha, Leela and Bibek (From Left to
               right){' '}
             </p>
-          </div>
+          </div> */}
           {/* Text Section */}
-          <div className="w-full mt-4 md:p-6 text-justify space-y-2 md:space-y-6 font-poppins ">
+          {/* <div className="w-full mt-4 md:p-6 text-justify space-y-2 md:space-y-6 font-poppins ">
             <p>
               Our week commenced with the successful completion of last week's
               task related to GIS. Afterward, we dedicated some time to gaining
@@ -128,8 +132,22 @@ function Blog() {
               about other teams' projects and shared our own journey.
             </p>
             <p className="text-left">-Team Blood Sync</p>
-          </div>
+          </div> */}
         </div>
+      </div>
+      <div className="flex justify-between items-center px-6 pb-4 bg-[rgb(239,247,255)]">
+        <Link
+          to="/blog2"
+          className="text-[#3B536D] hover:text-black hover:underline"
+        >
+          <MdArrowBack size={30} /> Previous Blog
+        </Link>
+        <Link
+          to="/blog4"
+          className="text-[#3B536D] hover:text-black hover:underline"
+        >
+          Next Blog <MdArrowForward size={30} />
+        </Link>
       </div>
       <Footer className="font-[Poppins]" />
     </div>
