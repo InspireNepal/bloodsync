@@ -137,14 +137,15 @@ const Project = () => {
         <p className="text-5xl leading-10 tracking-wide text-[#3B536D]">BLOG</p>
         <div className="flex flex-col justify-center gap-8">
           {featured.map((oneBlog) => (
-            <div className="w-full p-2 md:px-10 md:py-5 my-5 flex flex-col gap-2 justify-start items-start border-2 border-[#3B536D] rounded-lg">
+            <div className="w-full  p-2 md:px-10 md:py-5 my-5 flex flex-col gap-2 justify-start items-start border-2 border-[#3B536D] rounded-lg">
               <div className="flex flex-col md:flex-row w-full gap-10">
-                <div className="">
+                <div className="h-80 overflow-hidden">
                   <Link to="blog2">
                     <img
                       src={oneBlog.image}
                       alt="group preparing for Playback I"
                       width="1000px"
+                      height="200px"
                     />
                   </Link>
                 </div>
