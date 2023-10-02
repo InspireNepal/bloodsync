@@ -1,44 +1,53 @@
-import { MdOutlineKeyboardBackspace } from 'react-icons/md';
-import Samiksha from '../assets/Samikxya.jpg';
-import Leela from '../assets/leela.jpg';
-import Sarovar from '../assets/Sarovar.jpg';
-import Bibek from '../assets/Bibek.jpg';
-import Group1 from '../assets/Group1.jpg';
-import Image1 from '../assets/1000009858.jpg';
-import { Link } from 'react-router-dom';
-import TeamSlider from './TeamSlider';
+import { MdOutlineKeyboardBackspace } from "react-icons/md";
+import Samiksha from "../assets/Samikxya.jpg";
+import Leela from "../assets/leela.jpg";
+import Sarovar from "../assets/Sarovar.jpg";
+import Bibek from "../assets/Bibek.jpg";
+import Group1 from "../assets/Group1.jpg";
+import Image1 from "../assets/1000009858.jpg";
+import CHRImage from "../assets/Sprint2 Image1.jpg";
+import { Link } from "react-router-dom";
+import TeamSlider from "./TeamSlider";
 
 const Project = () => {
   const teamMembers = [
     {
-      name: 'Bibek Adhikari',
+      name: "Bibek Adhikari",
       image: Bibek,
-      bio: 'Bibek is a recent graduate of Pashchimanchal Campus, Institute of Engineering, Tribhuvan University, specializing in Electronics, Communication, and Information Engineering. He possesses coding experience in frontend web development and a strong desire to explore emerging technologies. Bibek has a keen interest in data science and analytics, as well as a knack for designing IoT-based devices. In his leisure time, he contemplates reading books but often opts for watching movies due to a lack of motivation for extended reading sessions.',
+      bio: "Bibek is a recent graduate of Pashchimanchal Campus, Institute of Engineering, Tribhuvan University, specializing in Electronics, Communication, and Information Engineering. He possesses coding experience in frontend web development and a strong desire to explore emerging technologies. Bibek has a keen interest in data science and analytics, as well as a knack for designing IoT-based devices. In his leisure time, he contemplates reading books but often opts for watching movies due to a lack of motivation for extended reading sessions.",
     },
     {
-      name: 'Leela Saud',
+      name: "Leela Saud",
       image: Leela,
-      bio: 'Leela is a final year student of Bachelor in Computer Science and Information Technology (B.SC.CSIT) studying in Padmakanya Multiple Campus affiliated to Tribhuvan University. Besides programming, she is also passionate about data analytics, keen-observation and in-depth-research. During her leisure hours, she finds solace in spontaneous writing, letting her thoughts flow freely without constraints. She is also an outdoor enthusiast who often goes hiking and exploring new natural places.',
+      bio: "Leela is a final year student of Bachelor in Computer Science and Information Technology (B.SC.CSIT) studying in Padmakanya Multiple Campus affiliated to Tribhuvan University. Besides programming, she is also passionate about data analytics, keen-observation and in-depth-research. During her leisure hours, she finds solace in spontaneous writing, letting her thoughts flow freely without constraints. She is also an outdoor enthusiast who often goes hiking and exploring new natural places.",
     },
     {
-      name: 'Samiksha Khadka',
+      name: "Samiksha Khadka",
       image: Samiksha,
-      bio: 'Samiksha Khadka hails from the rural region of Okhaldhunga. She is currently a third-year undergraduate student, majoring in Computer Science at Padma Kanya Multiple Campus. Apart from her proficiency in communication, she excels at listening, therfore you will often find her with the earphones on, enjoying music. Beyond her love for technology, Samiksha holds a deep fascination for policy-making. She is known for infusing Nepali jargon into her casual conversations, adding a unique and local flavor to her interactions.',
+      bio: "Samiksha Khadka hails from the rural region of Okhaldhunga. She is currently a third-year undergraduate student, majoring in Computer Science at Padma Kanya Multiple Campus. Apart from her proficiency in communication, she excels at listening, therfore you will often find her with the earphones on, enjoying music. Beyond her love for technology, Samiksha holds a deep fascination for policy-making. She is known for infusing Nepali jargon into her casual conversations, adding a unique and local flavor to her interactions.",
     },
     {
-      name: 'Sarovar Bhandari',
+      name: "Sarovar Bhandari",
       image: Sarovar,
-      bio: 'Sarovar is a 3rd year computer science undergrad student studying in Tribhuvan university. Sarovar aspires to create software that is genuinely helpful for everyone. When he is not coding or watching football, you will find him playing a game of chess or exploring nature.',
+      bio: "Sarovar is a 3rd year computer science undergrad student studying in Tribhuvan university. Sarovar aspires to create software that is genuinely helpful for everyone. When he is not coding or watching football, you will find him playing a game of chess or exploring nature.",
     },
   ];
 
   const blogs = [
     {
-      title: 'Getting Started...',
+      title: "Getting Started...",
       image: Image1,
       text: "Our week commenced with the successful completion of last week's task related to GIS. Afterward, we dedicated some time to gaining a deeper understanding of APIs. This week was primarily focused on API learning, encompassing repository patterns and DTOs, which were effectively implemented in",
-    },
+    }
   ];
+
+  const featured = [
+    {
+      title: "Learning from Missteps and Triumphs",
+      image: CHRImage,
+      text: "In our recent sprint, we initiated our project by focusing on the foundational elements, primarily the database design. Initially, we were confident in our approach, believing that we had created a solid foundation for our solution. However, upon closer review, we realized that we had overlooke",
+    }
+  ]
   return (
     <div>
       <div className="p-5 md:p-20">
@@ -79,8 +88,8 @@ const Project = () => {
       </div>
       <div className=" w-full h-fit bg-[#3B536D]  p-5 md:p-20 flex flex-col items-center">
         <p className="text-3xl leading-8 font-semibold text-white text-center">
-          {' '}
-          OUR STORY{' '}
+          {" "}
+          OUR STORY{" "}
         </p>
         <p className="p-4 text-white md:leading-10 tracking-normal md:text-2xl text-justify">
           Human Development and Community Services (HDCS) is a NGO actively
@@ -111,7 +120,7 @@ const Project = () => {
         />
 
         <p className="p-4 text-white md:leading-10 tracking-wi md:text-2xl text-justify">
-          In response, our dedicated team,{' '}
+          In response, our dedicated team,{" "}
           <span className="font-medium text-2xl italic">BloodSync</span>, is
           committed to crafting a technological solution that bridges the divide
           between blood donors and patients. Our primary goal is to devise a
@@ -127,6 +136,33 @@ const Project = () => {
       <div className="flex flex-col gap-4 m-5 md:mt-20 text-center p-5 cursor-pointer">
         <p className="text-5xl leading-10 tracking-wide text-[#3B536D]">BLOG</p>
         <div className="flex flex-col justify-center gap-8">
+          {featured.map((oneBlog) => (
+            <div className=" w-full p-2 md:px-10 md:py-5 my-5 flex flex-col gap-2 justify-start items-start border-2 border-[#3B536D] rounded-lg">
+              <div className="flex flex-col md:flex-row w-full gap-10">
+                <div className="">
+                  <Link to="blog1">
+                    <img
+                      src={oneBlog.image}
+                      alt="group preparing for Playback I"
+                      width="1000px"
+                    />
+                  </Link>
+                </div>
+                <Link to="blog1">
+                  <div className="flex flex-col gap-4 md:gap-10 md:p-5">
+                    <p className="text-3xl md:text-5xl font-medium md:leading-12 text-left tracking-wide text-[#3B536D]">
+                      {oneBlog.title}
+                    </p>
+
+                    <div className="w-full text-left">
+                      {oneBlog.text}{" "}
+                      <span className="text-blue-500">Read More..</span>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          ))}
           {blogs.map((oneBlog) => (
             <div className=" w-full p-2 md:px-10 md:py-5 my-5 flex flex-col gap-2 justify-start items-start border-2 border-[#3B536D] rounded-lg">
               <div className="flex flex-col md:flex-row w-full gap-10">
@@ -141,12 +177,12 @@ const Project = () => {
                 </div>
                 <Link to="blog1">
                   <div className="flex flex-col gap-4 md:gap-10 md:p-5">
-                    <p className="text-3xl md:text-5xl font-medium md:leading-6 text-left tracking-wide text-[#3B536D]">
+                    <p className="text-3xl md:text-5xl font-medium md:leading-12 text-left tracking-wide text-[#3B536D]">
                       {oneBlog.title}
                     </p>
 
                     <div className="w-full text-left">
-                      {oneBlog.text}{' '}
+                      {oneBlog.text}{" "}
                       <span className="text-blue-500">Read More..</span>
                     </div>
                   </div>
