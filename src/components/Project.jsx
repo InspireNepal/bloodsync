@@ -137,10 +137,10 @@ const Project = () => {
         <p className="text-5xl leading-10 tracking-wide text-[#3B536D]">BLOG</p>
         <div className="flex flex-col justify-center gap-8">
           {featured.map((oneBlog) => (
-            <div className=" w-full p-2 md:px-10 md:py-5 my-5 flex flex-col gap-2 justify-start items-start border-2 border-[#3B536D] rounded-lg">
+            <div className="w-full p-2 md:px-10 md:py-5 my-5 flex flex-col gap-2 justify-start items-start border-2 border-[#3B536D] rounded-lg">
               <div className="flex flex-col md:flex-row w-full gap-10">
                 <div className="">
-                  <Link to="blog1">
+                  <Link to="blog2">
                     <img
                       src={oneBlog.image}
                       alt="group preparing for Playback I"
@@ -148,7 +148,7 @@ const Project = () => {
                     />
                   </Link>
                 </div>
-                <Link to="blog1">
+                <Link to="blog2">
                   <div className="flex flex-col gap-4 md:gap-10 md:p-5">
                     <p className="text-3xl md:text-5xl font-medium md:leading-12 text-left tracking-wide text-[#3B536D]">
                       {oneBlog.title}
@@ -164,7 +164,7 @@ const Project = () => {
             </div>
           ))}
           {blogs.map((oneBlog) => (
-            <div className=" w-full p-2 md:px-10 md:py-5 my-5 flex flex-col gap-2 justify-start items-start border-2 border-[#3B536D] rounded-lg">
+            <div className="w-full p-2 md:px-10 md:py-5 my-5 flex flex-col gap-2 justify-start items-start border-2 border-[#3B536D] rounded-lg">
               <div className="flex flex-col md:flex-row w-full gap-10">
                 <div className="">
                   <Link to="blog1">
