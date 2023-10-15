@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "./static/css/main.3fd92856.css",
-    "main.js": "./static/js/main.87d73eb5.js",
+    "main.css": "./static/css/main.94d9da50.css",
+    "main.js": "./static/js/main.9b3c93b8.js",
     "static/media/Group1.jpg": "./static/media/Group1.2f20fd9231841ed69615.jpg",
+    "static/media/Sprint3 Image1.jpg": "./static/media/Sprint3 Image1.0a2d3e3998dd6e50807c.jpg",
     "static/media/Sprint2 Image2.jpg": "./static/media/Sprint2 Image2.910941f99bd488b0ce3b.jpg",
     "static/media/Sprint2 Image1.jpg": "./static/media/Sprint2 Image1.ea0f44d7c7bfe191740e.jpg",
+    "static/media/Sprint3 Image2.jpg": "./static/media/Sprint3 Image2.9d99913458a46733b017.jpg",
     "static/media/1000009866.jpg": "./static/media/1000009866.bc3f89c4d60129114490.jpg",
     "static/media/1000009858.jpg": "./static/media/1000009858.2eceef793b94c09da2b7.jpg",
     "static/media/Samikxya.jpg": "./static/media/Samikxya.f3ad60293090d9a0f3c8.jpg",
@@ -13,11 +15,11 @@
     "static/media/logo_white3.5.png": "./static/media/logo_white3.5.ee43bf6451d8d3223d85.png",
     "static/media/leela.jpg": "./static/media/leela.e84bf76a1ab1852e5c06.jpg",
     "index.html": "./index.html",
-    "main.3fd92856.css.map": "./static/css/main.3fd92856.css.map",
-    "main.87d73eb5.js.map": "./static/js/main.87d73eb5.js.map"
+    "main.94d9da50.css.map": "./static/css/main.94d9da50.css.map",
+    "main.9b3c93b8.js.map": "./static/js/main.9b3c93b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fd92856.css",
-    "static/js/main.87d73eb5.js"
+    "static/css/main.94d9da50.css",
+    "static/js/main.9b3c93b8.js"
   ]
 }
