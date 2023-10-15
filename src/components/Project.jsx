@@ -6,6 +6,7 @@ import Bibek from "../assets/Bibek.jpg";
 import Group1 from "../assets/Group1.jpg";
 import Image1 from "../assets/1000009858.jpg";
 import CHRImage from "../assets/Sprint2 Image1.jpg";
+import Sprint3Image from '../assets/Sprint3 Image1.jpg'
 import { Link } from "react-router-dom";
 import TeamSlider from "./TeamSlider";
 
@@ -47,7 +48,15 @@ const Project = () => {
       image: CHRImage,
       text: "In our recent sprint, we initiated our project by focusing on the foundational elements, primarily the database design. Initially, we were confident in our approach, believing that we had created a solid foundation for our solution. However, upon closer review, we realized that we had overlooke",
     }
-  ]
+  ];
+
+  const blogs3 = [
+    {
+      title: "Challenges, Growth and Progress",
+      image: Sprint3Image,
+      text:"Over the past two weeks, our team has encountered a variety of challenges and achievements while working on our project. We started with some difficulties, particularly as newcomers dealing with merge conflicts. The workshops proved immensely beneficial for enhancing our backend skills."
+    }
+  ];
   return (
     <div>
       <div className="p-5 md:p-20">
@@ -136,6 +145,37 @@ const Project = () => {
       <div className="flex flex-col gap-4 m-5 md:mt-20 text-center p-5 cursor-pointer">
         <p className="text-5xl leading-10 tracking-wide text-[#3B536D]">BLOG</p>
         <div className="flex flex-col justify-center gap-8">
+
+        {blogs3.map((oneBlog) => (
+            <div className="w-full  p-2 md:px-10 md:py-5 my-5 flex flex-col gap-2 justify-start items-start border-2 border-[#3B536D] rounded-lg">
+              <div className="flex flex-col md:flex-row w-full gap-10">
+                <div className="h-80 overflow-hidden">
+                  <Link to="blog3">
+                    <img
+                      src={oneBlog.image}
+                      alt="group preparing for Playback I"
+                      width="1000px"
+                      height="200px"
+                    />
+                  </Link>
+                </div>
+                <Link to="blog3">
+                  <div className="flex flex-col gap-4 md:gap-10 md:p-5">
+                    <p className="text-3xl md:text-5xl font-medium md:leading-12 text-left tracking-wide text-[#3B536D]">
+                      {oneBlog.title}
+                    </p>
+
+                    <div className="w-full text-left">
+                      {oneBlog.text}{" "}
+                      <span className="text-blue-500">Read More..</span>
+                    </div>
+                  </div>
+                </Link>
+
+              </div>
+            </div>
+          ))}
+
           {featured.map((oneBlog) => (
             <div className="w-full  p-2 md:px-10 md:py-5 my-5 flex flex-col gap-2 justify-start items-start border-2 border-[#3B536D] rounded-lg">
               <div className="flex flex-col md:flex-row w-full gap-10">
@@ -149,6 +189,7 @@ const Project = () => {
                     />
                   </Link>
                 </div>
+                
                 <Link to="blog2">
                   <div className="flex flex-col gap-4 md:gap-10 md:p-5">
                     <p className="text-3xl md:text-5xl font-medium md:leading-12 text-left tracking-wide text-[#3B536D]">
@@ -161,6 +202,7 @@ const Project = () => {
                     </div>
                   </div>
                 </Link>
+
               </div>
             </div>
           ))}
