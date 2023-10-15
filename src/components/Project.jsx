@@ -54,7 +54,7 @@ const Project = () => {
     {
       title: "Challenges, Growth and Progress",
       image: Sprint3Image,
-      text:"Over the past two weeks, our team has encountered a variety of challenges and achievements while working on our project. We started with some difficulties, particularly as newcomers dealing with merge conflicts. The workshops proved immensely beneficial for enhancing our backend skills."
+      text: "We started this sprint with a fair share of difficulties, particularly as newcomers to the project who had to grapple with merge conflicts. The steep learning curve initially left us feeling somewhat overwhelmed, but we quickly realized that it was an opportunity for growth. Our participation in workshops, which we initially found intimidating, proved to be immensely beneficial for enhancing our backend skills. The knowledge we "
     }
   ];
   return (
@@ -146,7 +146,7 @@ const Project = () => {
         <p className="text-5xl leading-10 tracking-wide text-[#3B536D]">BLOG</p>
         <div className="flex flex-col justify-center gap-8">
 
-        {blogs3.map((oneBlog) => (
+          {blogs3.map((oneBlog) => (
             <div className="w-full  p-2 md:px-10 md:py-5 my-5 flex flex-col gap-2 justify-start items-start border-2 border-[#3B536D] rounded-lg">
               <div className="flex flex-col md:flex-row w-full gap-10">
                 <div className="h-80 overflow-hidden">
@@ -175,64 +175,65 @@ const Project = () => {
               </div>
             </div>
           ))}
-
-          {featured.map((oneBlog) => (
-            <div className="w-full  p-2 md:px-10 md:py-5 my-5 flex flex-col gap-2 justify-start items-start border-2 border-[#3B536D] rounded-lg">
-              <div className="flex flex-col md:flex-row w-full gap-10">
-                <div className="h-80 overflow-hidden">
-                  <Link to="blog2">
-                    <img
-                      src={oneBlog.image}
-                      alt="group preparing for Playback I"
-                      width="1000px"
-                      height="200px"
-                    />
-                  </Link>
-                </div>
-                
-                <Link to="blog2">
-                  <div className="flex flex-col gap-4 md:gap-10 md:p-5">
-                    <p className="text-3xl md:text-5xl font-medium md:leading-12 text-left tracking-wide text-[#3B536D]">
-                      {oneBlog.title}
-                    </p>
-
-                    <div className="w-full text-left">
-                      {oneBlog.text}{" "}
-                      <span className="text-blue-500">Read More..</span>
+          <div className="flex gap-4">
+            <div className="w-full md:w-1/2">
+              {featured.map((oneBlog) => (
+                <div className="w-full p-2 md:px-10 md:py-5 my-5 flex flex-col gap-2 justify-start items-start border-2 border-[#3B536D] rounded-lg">
+                  <div className="flex flex-col md:flex-row w-full gap-10">
+                    <div className="h-80 overflow-hidden">
+                      <Link to="blog2">
+                        <img
+                          src={oneBlog.image}
+                          alt="group preparing for Playback I"
+                          width="1000px"
+                          height="200px"
+                        />
+                      </Link>
                     </div>
+                    <Link to="blog2">
+                      <div className="flex flex-col gap-4 md:gap-10 md:p-5">
+                        <p className="text-3xl md:text-5xl font-medium md:leading-12 text-left tracking-wide text-[#3B536D]">
+                          {oneBlog.title}
+                        </p>
+                        <div className="w-full text-left">
+                          {oneBlog.text} <span className="text-blue-500">Read More..</span>
+                        </div>
+                      </div>
+                    </Link>
                   </div>
-                </Link>
-
-              </div>
-            </div>
-          ))}
-          {blogs.map((oneBlog) => (
-            <div className="w-full p-2 md:px-10 md:py-5 my-5 flex flex-col gap-2 justify-start items-start border-2 border-[#3B536D] rounded-lg">
-              <div className="flex flex-col md:flex-row w-full gap-10">
-                <div className="">
-                  <Link to="blog1">
-                    <img
-                      src={oneBlog.image}
-                      alt="group preparing for Playback I"
-                      width="1000px"
-                    />
-                  </Link>
                 </div>
-                <Link to="blog1">
-                  <div className="flex flex-col gap-4 md:gap-10 md:p-5">
-                    <p className="text-3xl md:text-5xl font-medium md:leading-12 text-left tracking-wide text-[#3B536D]">
-                      {oneBlog.title}
-                    </p>
-
-                    <div className="w-full text-left">
-                      {oneBlog.text}{" "}
-                      <span className="text-blue-500">Read More..</span>
-                    </div>
-                  </div>
-                </Link>
-              </div>
+              ))}
             </div>
-          ))}
+            <div className="w-full md:w-1/2">
+              {blogs.map((oneBlog) => (
+                <div className="w-full p-2 md:px-10 md:py-5 my-5 flex flex-col gap-2 justify-start items-start border-2 border-[#3B536D] rounded-lg">
+                  <div className="flex flex-col md:flex-row w-full gap-10">
+                    <div className="">
+                      <Link to="blog1">
+                        <img
+                          src={oneBlog.image}
+                          alt="group preparing for Playback I"
+                          width="1000px"
+                        />
+                      </Link>
+                    </div>
+                    <Link to="blog1">
+                      <div className="flex flex-col gap-4 md:gap-10 md:p-5">
+                        <p className="text-3xl md:text-5xl font-medium md:leading-12 text-left tracking-wide text-[#3B536D]">
+                          {oneBlog.title}
+                        </p>
+                        <div className="w-full text-left">
+                          {oneBlog.text}{" "}
+                          <span className="text-blue-500">Read More..</span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              ))}
+
+            </div>
+          </div>
         </div>
       </div>
       <div className="flex flex-col gap-4 m-5 text-center p-5 md:p-20">
@@ -258,3 +259,5 @@ const Project = () => {
 };
 
 export default Project;
+
+
