@@ -47,7 +47,7 @@ const Project = () => {
     {
       title: "Learning from Missteps and Triumphs",
       image: CHRImage,
-      text: "In our recent sprint, we initiated our project by focusing on the foundational elements, primarily the database design. Initially, we were confident in our approach, believing that we had created a solid foundation for our solution. However, upon closer review, we realized that we had overlooke",
+      text: "In our recent sprint, we initiated our project by focusing on the foundational elements, primarily the database design. Initially, we were confident in our approach, believing that we had created a solid foundation for...",
     }
   ];
 
@@ -55,7 +55,7 @@ const Project = () => {
     {
       title: "Challenges, Growth and Progress",
       image: Sprint3Image,
-      text: "We started this sprint with a fair share of difficulties, particularly as newcomers to the project who had to grapple with merge conflicts. The steep learning curve initially left us feeling somewhat overwhelmed, but we quickly realized that it was an opportunity for growth. Our participation in workshops, which we initially found intimidating, proved to be immensely beneficial for enhancing our backend skills. The knowledge we "
+      text:"We started this sprint with difficulties as newcomers, grappling with merge conflicts. The steep learning curve left us overwhelmed, but it was an opportunity for growth. Workshops, initially intimidating, enhanced our backend skills..."
     }
   ];
 
@@ -196,13 +196,14 @@ const Project = () => {
                           src={oneBlog.image}
                           alt="group preparing for Playback III"
                           width="1000px"
-                          height="200px"
+                          height="auto"
+
                         />
                       </Link>
                     </div>
                     <Link to="blog3">
                       <div className="flex flex-col gap-4 md:gap-10 md:p-5">
-                        <p className="text-3xl md:text-5xl font-medium md:leading-12 text-left tracking-wide text-[#3B536D]">
+                      <p className="text-lg md:text-xl font-medium md:leading-12 text-center tracking-wide text-[#3B536D]">
                           {oneBlog.title}
                         </p>
                         <div className="w-full text-left">
@@ -225,13 +226,13 @@ const Project = () => {
                           src={oneBlog.image}
                           alt="group preparing for Playback II"
                           width="1000px"
-                          height="200px"
+                          height="auto"
                         />
                       </Link>
                     </div>
                     <Link to="blog2">
                       <div className="flex flex-col gap-4 md:gap-10 md:p-5">
-                        <p className="text-3xl md:text-5xl font-medium md:leading-12 text-left tracking-wide text-[#3B536D]">
+                      <p className="text-lg md:text-xl font-medium md:leading-12 text-center tracking-wide text-[#3B536D]">
                           {oneBlog.title}
                         </p>
                         <div className="w-full text-left">
@@ -253,12 +254,13 @@ const Project = () => {
                           src={oneBlog.image}
                           alt="group preparing for Playback I"
                           width="1000px"
+                          height="auto"
                         />
                       </Link>
                     </div>
                     <Link to="blog1">
                       <div className="flex flex-col gap-4 md:gap-10 md:p-5">
-                        <p className="text-3xl md:text-5xl font-medium md:leading-12 text-left tracking-wide text-[#3B536D]">
+                      <p className="text-lg md:text-xl font-medium md:leading-12 text-center tracking-wide text-[#3B536D]">
                           {oneBlog.title}
                         </p>
                         <div className="w-full text-left">
@@ -270,7 +272,6 @@ const Project = () => {
                   </div>
                 </div>
               ))}
-
             </div>
           </div>
         </div>
