@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Blog1 from './pages/Blog1';
 import Blog2 from './pages/Blog2';
 import Blog3 from './pages/Blog3';
+import Blog4 from './pages/Blog4';
 export default function App() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/blog1" element={<Blog1 />} />
           <Route path="/blog2" element={<Blog2 />} />
           <Route path="/blog3" element={<Blog3 />} />
+          <Route path="/blog4" element={<Blog4 />} />
         </Routes>
       </BrowserRouter>
     </>

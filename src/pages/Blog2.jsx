@@ -44,11 +44,7 @@ function Blog() {
               src={SprintImage1}
               alt="Hello"
             />
-            {/* <p className="pt-2 border-b-2 border-black w-full pb-4 md:w-3/4 text-center text-sm ">
-              {' '}
-              Team BloodSync: Sarovar, Samiksha, Leela and Bibek (From Left to
-              right){' '}
-            </p> */}
+           
           </div>
           <div className="w-full mt-4 md:p-6 text-justify space-y-2 md:space-y-6 font-poppins ">
             <p>
